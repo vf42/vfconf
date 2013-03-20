@@ -44,8 +44,12 @@ set smartcase
 " Syntax highlighting.
 "
 syntax on
-colorscheme darkburn
-set background=dark
+try
+    colorscheme darkburn
+    set background=dark
+catch /^Vim\%((\a\+)\)\=:E185/
+    colorscheme evening
+endtry
 if has("gui_running")
     set listchars=tab:»·,trail:·,extends:>,precedes:<
 else
