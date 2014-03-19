@@ -68,7 +68,6 @@ if has("gui_running")
     set guioptions-=m
     set guioptions-=l
     set guioptions-=L
-    set lines=50 columns=100
     if has("gui_gtk2")
         set guifont=Liberation\ Mono\ 11
     elseif has("gui_win32")
