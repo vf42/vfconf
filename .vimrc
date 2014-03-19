@@ -61,6 +61,8 @@ set list
 " Gvim-specific: font & look.
 "
 if has("gui_running")
+    set lines=42
+    set columns=120
     set guioptions-=T
     set guioptions-=m
     set guioptions-=l
