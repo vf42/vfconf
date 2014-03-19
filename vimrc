@@ -15,6 +15,7 @@ set noswapfile
 filetype plugin indent on
 set encoding=utf-8
 set ffs=unix,dos
+set visualbell
 " Info in footer.
 set showcmd
 set ruler
@@ -67,8 +68,9 @@ if has("gui_running")
     set guioptions-=m
     set guioptions-=l
     set guioptions-=L
+    set lines=50 columns=100
     if has("gui_gtk2")
-        set guifont=DejaVu\ Sans\ Mono\ 10
+        set guifont=Liberation\ Mono\ 11
     elseif has("gui_win32")
         set guifont=Consolas:h10:cANSI
     endif
