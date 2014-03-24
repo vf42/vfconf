@@ -63,7 +63,7 @@ set list
 "
 if has("gui_running")
     set lines=42
-    set columns=120
+    set columns=100
     set guioptions-=T
     set guioptions-=m
     set guioptions-=l
