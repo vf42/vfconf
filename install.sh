@@ -5,7 +5,7 @@
 
 WRKDIR=`pwd`
 
-for f in `ls -a | egrep -v ".git|install.sh|^\.$|^\.\.$"`
+for f in `ls -a | egrep -v ".git|install|^\.$|^\.\.$"`
 do
     echo "Installing $f"
     unlink ~/$f
