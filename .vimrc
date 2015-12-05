@@ -71,7 +71,7 @@ if has("gui_running")
     if has("gui_gtk2")
         set guifont=Liberation\ Mono\ 11
     elseif has("gui_win32")
-        set guifont=Consolas:h10:cANSI
+        set guifont=Consolas:h11:cANSI
     endif
 endif
 
