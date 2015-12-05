@@ -4,8 +4,11 @@
 #
 
 WRKDIR=`pwd`
-echo $WRKDIR
 
-unlink ~/.vimrc
-ln -s $WRKDIR/.vimrc ~/.vimrc
+for f in `ls -a | egrep -v ".git|install.sh|^\.$|^\.\.$"`
+do
+    echo "Installing $f"
+    unlink ~/$f
+    ln -vs $WRKDIR/$f ~/$f
+done
 
