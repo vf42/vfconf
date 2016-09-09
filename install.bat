@@ -1,7 +1,8 @@
 %echo off
 rem Windows version of installer.
 
-for /d %%i in (src/*) do (
+cd src
+for /d %%i in (*) do (
     IF NOT "%%~i" == ".dontinstall" (
         echo Installing %%~i
         rmdir "%UserProfile%\%%~i"
@@ -12,7 +13,7 @@ rem On Windows, need to use Vimfiles for .vim
 rmdir /s /q "%UserProfile%\vimfiles"
 mklink /d "%UserProfile%\vimfiles" "%UserProfile%\.vim"
 
-for %%i in (src/*) do (
+for %%i in (*) do (
     IF NOT "%%~i" == "install.bat" IF NOT "%%~i" == "install.sh" (
         echo Installing %%~i
         del "%UserProfile%\%%~i"
