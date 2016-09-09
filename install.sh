@@ -3,7 +3,7 @@
 # Installing my config files in the home dir.
 #
 
-WRKDIR=`pwd/src`
+WRKDIR=`pwd`/src
 
 for f in `ls -a $WRKDIR | egrep -v "^\.$|^\.\.$"`
 do
