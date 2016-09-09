@@ -93,3 +93,9 @@ set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
 
+"
+" Plugin-specific settings.
+"
+" vim-json
+let g:vim_json_syntax_conceal = 0
+
