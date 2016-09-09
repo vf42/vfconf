@@ -3,9 +3,9 @@
 # Installing my config files in the home dir.
 #
 
-WRKDIR=`pwd`
+WRKDIR=`pwd/src`
 
-for f in `ls -a | egrep -v "README|.git|install|.dontinstall|^\.$|^\.\.$"`
+for f in `ls -a $WRKDIR | egrep -v "^\.$|^\.\.$"`
 do
     echo "Installing $f"
     unlink ~/$f
